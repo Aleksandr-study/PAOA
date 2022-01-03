@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void FillArray(int* array, int sizeArray)//функция заполнения массива
+void FillArray(int* array, int sizeArray)//С„СѓРЅРєС†РёСЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ РјР°СЃСЃРёРІР°
 {
 	for (int i = 0; i < sizeArray; i++)
 	{
@@ -10,9 +10,9 @@ void FillArray(int* array, int sizeArray)//функция заполнения массива
 	}
 }
 
-void ShowArray(int* array, int sizeArray)//функция выведения на экран
+void ShowArray(int* array, int sizeArray)//С„СѓРЅРєС†РёСЏ РІС‹РІРµРґРµРЅРёСЏ РЅР° СЌРєСЂР°РЅ
 {
-	cout << "Массив: " << endl;
+	cout << "РњР°СЃСЃРёРІ: " << endl;
 	for (int i = 0; i < sizeArray; i++)
 	{
 		cout << *(array + i) << " ";
@@ -20,7 +20,7 @@ void ShowArray(int* array, int sizeArray)//функция выведения на экран
 	cout << endl;
 }
 
-void shift(int* array, int N, int start) //функция сдвигает элементы
+void shift(int* array, int N, int start) //С„СѓРЅРєС†РёСЏ СЃРґРІРёРіР°РµС‚ СЌР»РµРјРµРЅС‚С‹
 {
 	for (int i = start; i < N - 5; i++)
 	{
@@ -31,13 +31,13 @@ void shift(int* array, int N, int start) //функция сдвигает элементы
 }
 int quadratic_equation(int a, int b, int c, int x = 4)
 {																																																																																														
-	cout << "Функция Int quadratic equation вызвана!" << endl << "Результат: ";
+	cout << "Р¤СѓРЅРєС†РёСЏ Int quadratic equation РІС‹Р·РІР°РЅР°!" << endl << "Р РµР·СѓР»СЊС‚Р°С‚: ";
 	return a * x * x + b * x + c;
 }
 
 double quadratic_equation(double a, double b, double c, double x)
 {
-	cout << "Функция Double quadratic equation вызвана!" << endl << "Результат: ";
+	cout << "Р¤СѓРЅРєС†РёСЏ Double quadratic equation РІС‹Р·РІР°РЅР°!" << endl << "Р РµР·СѓР»СЊС‚Р°С‚: ";
 	return a * x * x + b * x + c;
 }
 int main(void)
@@ -46,11 +46,11 @@ int main(void)
 	int sizeArray;
 	while (true)
 	{
-		cout << "Введите размерность: ";
+		cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ: ";
 		cin >> sizeArray;
 		if (sizeArray < 10)
 		{
-			cout << "Размерность должна быть как минимум 10!" << endl;
+			cout << "Р Р°Р·РјРµСЂРЅРѕСЃС‚СЊ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РєР°Рє РјРёРЅРёРјСѓРј 10!" << endl;
 		}
 		else
 		{
